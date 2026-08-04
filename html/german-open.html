@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://go-wcs.com/wp-content/uploads/2026/07/social_share.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Yellowtail&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#141414;
@@ -73,48 +73,29 @@
     text-align:center;
   }
 
-  /* ---- header ---- */
-  .logo{position:relative;padding:6px 0 2px;}
-  .pre,.big,.year{
-    text-shadow:
-      0 0 10px #fff,
-      0 0 22px #fff,
-      0 0 44px rgba(255,255,255,.85);
+  /* ---- header (official logo) ---- */
+  .logo{
+    position:relative;
+    padding:4px 0 2px;
+  }
+  .logo img{
+    position:relative;
+    z-index:1;
+    display:block;
+    width:100%;
+    max-width:430px;
+    height:auto;
+    margin:0 auto;
+    filter:drop-shadow(0 6px 14px rgba(0,0,0,.28));
   }
   .glow{
     position:absolute;
-    left:50%;top:44%;
-    width:116%;height:88%;
+    left:50%;top:50%;
+    width:104%;height:82%;
     transform:translate(-50%,-50%);
-    background:radial-gradient(ellipse at center, rgba(255,255,255,.95) 0 32%, rgba(255,255,255,.55) 48%, rgba(255,255,255,0) 72%);
-    filter:blur(6px);
-    z-index:-1;
-  }
-  .pre{
-    font-family:"Yellowtail",cursive;
-    font-size:30px;
-    line-height:1;
-    transform:rotate(-2deg);
-  }
-  .big{
-    font-family:"Lobster Two",cursive;
-    font-style:italic;
-    font-weight:700;
-    font-size:70px;
-    line-height:.92;
-    letter-spacing:-1px;
-    transform:rotate(-3deg);
-    margin:2px 0 0;
-  }
-  .big .l2{display:block;margin-left:26px;}
-  .year{
-    font-family:"Lobster Two",cursive;
-    font-style:italic;
-    font-weight:700;
-    font-size:34px;
-    transform:rotate(-3deg);
-    margin-top:-2px;
-    margin-left:120px;
+    background:radial-gradient(ellipse at center, rgba(255,255,255,.98) 0 38%, rgba(255,255,255,.62) 54%, rgba(255,255,255,0) 74%);
+    filter:blur(10px);
+    z-index:0;
   }
 
   .wsdc{
@@ -214,27 +195,6 @@
   .socials svg{width:24px;height:24px;fill:var(--gold);}
   .socials a:hover svg{fill:#fff;}
 
-  /* ---- lineup ---- */
-  .lineup{
-    margin-top:24px;
-    background:rgba(17,17,17,.92);
-    border:2px solid var(--gold);
-    padding:16px 16px 14px;
-    color:var(--cream);
-    clip-path:polygon(0 0, calc(100% - 16px) 0, 100% 100%, 16px 100%);
-    box-shadow:0 8px 18px rgba(0,0,0,.3);
-  }
-  .lineup h3{
-    color:var(--gold);
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:2.5px;
-    text-transform:uppercase;
-    margin-bottom:9px;
-  }
-  .lineup p{font-size:13px;line-height:1.75;font-weight:600;}
-  .lineup .dj{color:var(--gold);font-size:11.5px;letter-spacing:.8px;margin-top:8px;text-transform:uppercase;}
-
   footer{
     margin-top:24px;
     font-size:11.5px;
@@ -252,9 +212,6 @@
     .bg::after{animation:none;}
   }
   @media (max-width:400px){
-    .big{font-size:58px;}
-    .pre{font-size:25px;}
-    .year{font-size:29px;margin-left:96px;}
     .link{font-size:15px;padding:15px 16px;}
   }
 </style>
@@ -269,12 +226,11 @@
 
 <main class="card">
 
-  <div class="logo">
-    <div class="glow" aria-hidden="true"></div>
-    <div class="pre">the West Coast Swing</div>
-    <h1 class="big">German<span class="l2">Open</span></h1>
-    <div class="year">2026</div>
-  </div>
+  <h1 class="logo">
+    <span class="glow" aria-hidden="true"></span>
+    <img src="https://go-wcs.com/wp-content/uploads/2026/07/german_open_west_coast_swing_logo_001.png"
+         alt="the West Coast Swing German Open" width="1142" height="667">
+  </h1>
 
   <div class="wsdc" aria-label="WSDC Registry Event">
     <span>Registry</span><b>WSDC</b><span>Event</span>
@@ -312,20 +268,6 @@
       <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
     </a>
   </div>
-
-  <section class="lineup">
-    <h3>★ Your Trainers ★</h3>
-    <p>
-      Thibault &amp; Nicole Ramirez<br>
-      Jakub Jakubek &amp; Emeline Rochefeuille<br>
-      John Lindo &amp; Mejrem Halidovic<br>
-      Maxime &amp; Torri Zzaoui<br>
-      Igor Pitangui &amp; Fernanda Dubiel<br>
-      Paul Warden &amp; Jula Palenga<br>
-      Philipp &amp; Ekaterina Wolff
-    </p>
-    <p class="dj">Head DJ Justin Petersen · MC Wayne Powell</p>
-  </section>
 
   <footer>
     Ballhaus Freiburg · Germany &nbsp;·&nbsp; <a href="https://go-wcs.com" target="_blank" rel="noopener">go-wcs.com</a>
