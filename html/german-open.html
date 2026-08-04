@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The West Coast Swing German Open 2026 — Freiburg</title>
+<meta name="description" content="German Open 2026 · August 5–9 · Ballhaus Freiburg. Schedule, competitions, livestream, registration and location — all in one place.">
+<meta name="theme-color" content="#a43222">
+<meta property="og:title" content="The West Coast Swing German Open 2026">
+<meta property="og:description" content="August 5–9 2026 · Ballhaus Freiburg · WSDC Registry Event">
+<meta property="og:image" content="https://go-wcs.com/wp-content/uploads/2026/07/social_share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Yellowtail&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --red:#d61f1f;
+    --gold:#ffce00;
+    --cream:#fff6e2;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  html,body{min-height:100%;}
+
+  body{
+    font-family:"Montserrat",system-ui,sans-serif;
+    color:var(--ink);
+    background:#111;
+    display:flex;
+    justify-content:center;
+    padding:26px 16px 54px;
+    overflow-x:hidden;
+  }
+
+  /* ---- low-poly german flag mosaic ---- */
+  .bg{
+    position:fixed;
+    inset:0;
+    z-index:0;
+    pointer-events:none;
+  }
+  .bg svg{width:100%;height:100%;display:block;}
+  /* soft light bloom drifting over the mosaic */
+  .bg::after{
+    content:"";
+    position:absolute;inset:-20%;
+    background:
+      radial-gradient(circle at 30% 22%, rgba(255,255,255,.30) 0 6%, transparent 24%),
+      radial-gradient(circle at 72% 40%, rgba(255,255,255,.22) 0 5%, transparent 22%),
+      radial-gradient(circle at 45% 78%, rgba(255,255,255,.20) 0 6%, transparent 26%);
+    mix-blend-mode:screen;
+    animation:bloom 18s ease-in-out infinite alternate;
+  }
+  @keyframes bloom{
+    0%{transform:translate(0,0) scale(1);opacity:.8;}
+    100%{transform:translate(2%,-2.5%) scale(1.07);opacity:1;}
+  }
+
+  .card{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:500px;
+    text-align:center;
+  }
+
+  /* ---- header ---- */
+  .logo{position:relative;padding:6px 0 2px;}
+  .glow{
+    position:absolute;
+    left:50%;top:46%;
+    width:112%;height:80%;
+    transform:translate(-50%,-50%);
+    background:radial-gradient(ellipse at center, rgba(255,255,255,.95) 0 32%, rgba(255,255,255,.55) 48%, rgba(255,255,255,0) 72%);
+    filter:blur(6px);
+    z-index:-1;
+  }
+  .pre{
+    font-family:"Yellowtail",cursive;
+    font-size:30px;
+    line-height:1;
+    transform:rotate(-2deg);
+  }
+  .big{
+    font-family:"Lobster Two",cursive;
+    font-style:italic;
+    font-weight:700;
+    font-size:70px;
+    line-height:.92;
+    letter-spacing:-1px;
+    transform:rotate(-3deg);
+    margin:2px 0 0;
+  }
+  .big .l2{display:block;margin-left:26px;}
+  .year{
+    font-family:"Lobster Two",cursive;
+    font-style:italic;
+    font-weight:700;
+    font-size:34px;
+    transform:rotate(-3deg);
+    margin-top:-2px;
+    margin-left:120px;
+  }
+
+  .wsdc{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:76px;height:76px;
+    border-radius:50%;
+    background:#1b1b1b;
+    border:3px solid #4aa3d8;
+    color:#fff;
+    font-size:7px;
+    font-weight:800;
+    letter-spacing:1.2px;
+    line-height:1.35;
+    text-transform:uppercase;
+    box-shadow:0 6px 18px rgba(0,0,0,.45);
+    margin:12px 0 4px;
+    transform:rotate(-8deg);
+  }
+  .wsdc b{font-size:19px;letter-spacing:.5px;color:#fff;}
+
+  .meta{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--gold);
+    font-weight:800;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    padding:9px 18px;
+    margin:10px 0 6px;
+    clip-path:polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+    box-shadow:0 6px 16px rgba(0,0,0,.35);
+  }
+  .slogan{
+    display:inline-block;
+    background:rgba(255,246,226,.92);
+    color:var(--ink);
+    font-weight:600;
+    font-size:12.5px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    padding:7px 16px;
+    margin-bottom:24px;
+    clip-path:polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%);
+  }
+
+  /* ---- links ---- */
+  .links{display:flex;flex-direction:column;gap:13px;}
+  .link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    background:rgba(17,17,17,.94);
+    color:var(--cream);
+    border:2px solid var(--gold);
+    padding:16px 20px;
+    font-weight:800;
+    font-size:17px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    clip-path:polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+    box-shadow:0 8px 18px rgba(0,0,0,.30);
+    transition:transform .14s ease, background .14s ease, color .14s ease;
+  }
+  .link:hover{
+    transform:translateY(-3px);
+    background:var(--red);
+    border-color:#fff;
+  }
+  .link.primary{
+    background:rgba(214,31,31,.96);
+    border-color:#fff;
+    color:#fff;
+  }
+  .link.primary:hover{background:var(--ink);border-color:var(--gold);}
+  .link .ico{font-size:22px;width:28px;text-align:center;}
+  .link .txt{flex:1;text-align:left;}
+  .link .arr{color:var(--gold);font-size:15px;}
+  .link.primary .arr{color:#fff;}
+
+  /* ---- socials ---- */
+  .socials{display:flex;justify-content:center;gap:14px;margin-top:22px;}
+  .socials a{
+    width:54px;height:54px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(17,17,17,.94);
+    border:2px solid var(--gold);
+    clip-path:polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+    box-shadow:0 6px 14px rgba(0,0,0,.3);
+    transition:transform .14s ease, background .14s ease;
+  }
+  .socials a:hover{transform:translateY(-3px);background:var(--red);}
+  .socials svg{width:24px;height:24px;fill:var(--gold);}
+  .socials a:hover svg{fill:#fff;}
+
+  /* ---- lineup ---- */
+  .lineup{
+    margin-top:24px;
+    background:rgba(17,17,17,.92);
+    border:2px solid var(--gold);
+    padding:16px 16px 14px;
+    color:var(--cream);
+    clip-path:polygon(0 0, calc(100% - 16px) 0, 100% 100%, 16px 100%);
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
+  }
+  .lineup h3{
+    color:var(--gold);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    margin-bottom:9px;
+  }
+  .lineup p{font-size:13px;line-height:1.75;font-weight:600;}
+  .lineup .dj{color:var(--gold);font-size:11.5px;letter-spacing:.8px;margin-top:8px;text-transform:uppercase;}
+
+  footer{
+    margin-top:24px;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+    color:var(--ink);
+  }
+  footer a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink);}
+
+  /* mosaic palette */
+.k0{fill:#1a1a1a}.k1{fill:#262626}.k2{fill:#333333}.k3{fill:#404040}.k4{fill:#0f0f0f}.k5{fill:#4e4e4e}.r0{fill:#c41616}.r1{fill:#e02020}.r2{fill:#b01010}.r3{fill:#ee3428}.r4{fill:#9a0e0e}.r5{fill:#ff4632}.g0{fill:#ffce00}.g1{fill:#ffe03c}.g2{fill:#fab400}.g3{fill:#ffec78}.g4{fill:#f0a600}.g5{fill:#ffc41e}
+
+  @media (prefers-reduced-motion: reduce){
+    .bg::after{animation:none;}
+  }
+  @media (max-width:400px){
+    .big{font-size:58px;}
+    .pre{font-size:25px;}
+    .year{font-size:29px;margin-left:96px;}
+    .link{font-size:15px;padding:15px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <svg viewBox="0 0 1000 1600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<path class="k0" d="M0 0 126 0 0 159Z"/><path class="k5" d="M126 0 146 131 0 159Z"/><path class="k3" d="M126 0 292 0 244 168Z"/><path class="k5" d="M126 0 244 168 146 131Z"/><path class="k0" d="M292 0 336 0 244 168Z"/><path class="k3" d="M336 0 386 112 244 168Z"/><path class="k4" d="M336 0 545 0 450 162Z"/><path class="k1" d="M336 0 450 162 386 112Z"/><path class="k3" d="M545 0 589 0 450 162Z"/><path class="k2" d="M589 0 607 103 450 162Z"/><path class="k1" d="M589 0 744 0 769 122Z"/><path class="k1" d="M589 0 769 122 607 103Z"/><path class="k4" d="M744 0 852 0 769 122Z"/><path class="k5" d="M852 0 925 140 769 122Z"/><path class="k4" d="M852 0 1000 0 1000 160Z"/><path class="k1" d="M852 0 1000 160 925 140Z"/><path class="r0" d="M0 159 146 131 131 282Z"/><path class="r4" d="M0 159 131 282 0 278Z"/><path class="r5" d="M146 131 244 168 131 282Z"/><path class="r5" d="M244 168 259 272 131 282Z"/><path class="k4" d="M244 168 386 112 361 246Z"/><path class="r1" d="M244 168 361 246 259 272Z"/><path class="k2" d="M386 112 450 162 361 246Z"/><path class="r5" d="M450 162 494 276 361 246Z"/><path class="k3" d="M450 162 607 103 665 256Z"/><path class="k1" d="M450 162 665 256 494 276Z"/><path class="k0" d="M607 103 769 122 665 256Z"/><path class="k0" d="M769 122 699 252 665 256Z"/><path class="k3" d="M769 122 925 140 845 272Z"/><path class="k2" d="M769 122 845 272 699 252Z"/><path class="k5" d="M925 140 1000 160 845 272Z"/><path class="k4" d="M1000 160 1000 294 845 272Z"/><path class="r2" d="M0 278 131 282 0 359Z"/><path class="r3" d="M131 282 97 339 0 359Z"/><path class="r5" d="M131 282 259 272 282 321Z"/><path class="r1" d="M131 282 282 321 97 339Z"/><path class="r1" d="M259 272 361 246 282 321Z"/><path class="r2" d="M361 246 346 414 282 321Z"/><path class="r0" d="M361 246 494 276 517 344Z"/><path class="r5" d="M361 246 517 344 346 414Z"/><path class="r2" d="M494 276 665 256 517 344Z"/><path class="r4" d="M665 256 618 317 517 344Z"/><path class="k3" d="M665 256 699 252 702 318Z"/><path class="r1" d="M665 256 702 318 618 317Z"/><path class="k2" d="M699 252 845 272 702 318Z"/><path class="r1" d="M845 272 823 335 702 318Z"/><path class="k4" d="M845 272 1000 294 1000 334Z"/><path class="k0" d="M845 272 1000 334 823 335Z"/><path class="r4" d="M0 359 97 339 143 442Z"/><path class="r0" d="M0 359 143 442 0 521Z"/><path class="r5" d="M97 339 282 321 143 442Z"/><path class="r2" d="M282 321 289 477 143 442Z"/><path class="r0" d="M282 321 346 414 366 499Z"/><path class="r1" d="M282 321 366 499 289 477Z"/><path class="r1" d="M346 414 517 344 366 499Z"/><path class="r3" d="M517 344 518 540 366 499Z"/><path class="r4" d="M517 344 618 317 676 479Z"/><path class="r1" d="M517 344 676 479 518 540Z"/><path class="r2" d="M618 317 702 318 676 479Z"/><path class="r0" d="M702 318 794 481 676 479Z"/><path class="r4" d="M702 318 823 335 873 537Z"/><path class="r1" d="M702 318 873 537 794 481Z"/><path class="r3" d="M823 335 1000 334 873 537Z"/><path class="r5" d="M1000 334 1000 496 873 537Z"/><path class="r5" d="M0 521 143 442 0 576Z"/><path class="r2" d="M143 442 161 589 0 576Z"/><path class="r4" d="M143 442 289 477 280 655Z"/><path class="r1" d="M143 442 280 655 161 589Z"/><path class="r4" d="M289 477 366 499 280 655Z"/><path class="r0" d="M366 499 357 587 280 655Z"/><path class="r3" d="M366 499 518 540 465 610Z"/><path class="r4" d="M366 499 465 610 357 587Z"/><path class="r3" d="M518 540 676 479 465 610Z"/><path class="r3" d="M676 479 609 612 465 610Z"/><path class="r1" d="M676 479 794 481 697 610Z"/><path class="r4" d="M676 479 697 610 609 612Z"/><path class="r5" d="M794 481 873 537 697 610Z"/><path class="r3" d="M873 537 827 631 697 610Z"/><path class="r1" d="M873 537 1000 496 1000 609Z"/><path class="r3" d="M873 537 1000 609 827 631Z"/><path class="r5" d="M0 576 161 589 142 716Z"/><path class="r3" d="M0 576 142 716 0 770Z"/><path class="r2" d="M161 589 280 655 142 716Z"/><path class="r3" d="M280 655 231 704 142 716Z"/><path class="r3" d="M280 655 357 587 387 717Z"/><path class="r4" d="M280 655 387 717 231 704Z"/><path class="r5" d="M357 587 465 610 387 717Z"/><path class="r4" d="M465 610 452 753 387 717Z"/><path class="r2" d="M465 610 609 612 602 710Z"/><path class="r5" d="M465 610 602 710 452 753Z"/><path class="r0" d="M609 612 697 610 602 710Z"/><path class="r0" d="M697 610 775 698 602 710Z"/><path class="r3" d="M697 610 827 631 865 753Z"/><path class="r1" d="M697 610 865 753 775 698Z"/><path class="r4" d="M827 631 1000 609 865 753Z"/><path class="r4" d="M1000 609 1000 786 865 753Z"/><path class="g0" d="M0 770 142 716 0 847Z"/><path class="g1" d="M142 716 162 904 0 847Z"/><path class="r0" d="M142 716 231 704 270 854Z"/><path class="g3" d="M142 716 270 854 162 904Z"/><path class="r5" d="M231 704 387 717 270 854Z"/><path class="r5" d="M387 717 383 899 270 854Z"/><path class="r3" d="M387 717 452 753 548 877Z"/><path class="r0" d="M387 717 548 877 383 899Z"/><path class="r1" d="M452 753 602 710 548 877Z"/><path class="r4" d="M602 710 651 840 548 877Z"/><path class="r4" d="M602 710 775 698 753 875Z"/><path class="r5" d="M602 710 753 875 651 840Z"/><path class="r3" d="M775 698 865 753 753 875Z"/><path class="r5" d="M865 753 907 874 753 875Z"/><path class="r4" d="M865 753 1000 786 1000 859Z"/><path class="r0" d="M865 753 1000 859 907 874Z"/><path class="g0" d="M0 847 162 904 115 960Z"/><path class="g2" d="M0 847 115 960 0 1022Z"/><path class="g3" d="M162 904 270 854 115 960Z"/><path class="g0" d="M270 854 254 956 115 960Z"/><path class="g3" d="M270 854 383 899 326 1012Z"/><path class="g1" d="M270 854 326 1012 254 956Z"/><path class="g1" d="M383 899 548 877 326 1012Z"/><path class="g2" d="M548 877 482 1004 326 1012Z"/><path class="r0" d="M548 877 651 840 634 934Z"/><path class="g4" d="M548 877 634 934 482 1004Z"/><path class="r2" d="M651 840 753 875 634 934Z"/><path class="g2" d="M753 875 774 1023 634 934Z"/><path class="r5" d="M753 875 907 874 919 952Z"/><path class="r2" d="M753 875 919 952 774 1023Z"/><path class="r1" d="M907 874 1000 859 919 952Z"/><path class="r2" d="M1000 859 1000 1033 919 952Z"/><path class="g2" d="M0 1022 115 960 0 1074Z"/><path class="g4" d="M115 960 124 1126 0 1074Z"/><path class="g5" d="M115 960 254 956 269 1105Z"/><path class="g4" d="M115 960 269 1105 124 1126Z"/><path class="g4" d="M254 956 326 1012 269 1105Z"/><path class="g1" d="M326 1012 363 1090 269 1105Z"/><path class="g0" d="M326 1012 482 1004 541 1137Z"/><path class="g3" d="M326 1012 541 1137 363 1090Z"/><path class="g4" d="M482 1004 634 934 541 1137Z"/><path class="g0" d="M634 934 620 1104 541 1137Z"/><path class="g3" d="M634 934 774 1023 785 1073Z"/><path class="g5" d="M634 934 785 1073 620 1104Z"/><path class="g0" d="M774 1023 919 952 785 1073Z"/><path class="g3" d="M919 952 915 1115 785 1073Z"/><path class="g3" d="M919 952 1000 1033 1000 1153Z"/><path class="g1" d="M919 952 1000 1153 915 1115Z"/><path class="g4" d="M0 1074 124 1126 155 1195Z"/><path class="g1" d="M0 1074 155 1195 0 1217Z"/><path class="g5" d="M124 1126 269 1105 155 1195Z"/><path class="g2" d="M269 1105 241 1208 155 1195Z"/><path class="g2" d="M269 1105 363 1090 341 1271Z"/><path class="g2" d="M269 1105 341 1271 241 1208Z"/><path class="g2" d="M363 1090 541 1137 341 1271Z"/><path class="g0" d="M541 1137 540 1221 341 1271Z"/><path class="g1" d="M541 1137 620 1104 597 1259Z"/><path class="g4" d="M541 1137 597 1259 540 1221Z"/><path class="g3" d="M620 1104 785 1073 597 1259Z"/><path class="g4" d="M785 1073 704 1268 597 1259Z"/><path class="g4" d="M785 1073 915 1115 917 1208Z"/><path class="g3" d="M785 1073 917 1208 704 1268Z"/><path class="g0" d="M915 1115 1000 1153 917 1208Z"/><path class="g4" d="M1000 1153 1000 1216 917 1208Z"/><path class="g1" d="M0 1217 155 1195 0 1324Z"/><path class="g2" d="M155 1195 155 1358 0 1324Z"/><path class="g5" d="M155 1195 241 1208 251 1334Z"/><path class="g1" d="M155 1195 251 1334 155 1358Z"/><path class="g3" d="M241 1208 341 1271 251 1334Z"/><path class="g5" d="M341 1271 359 1391 251 1334Z"/><path class="g1" d="M341 1271 540 1221 540 1306Z"/><path class="g4" d="M341 1271 540 1306 359 1391Z"/><path class="g1" d="M540 1221 597 1259 540 1306Z"/><path class="g4" d="M597 1259 601 1397 540 1306Z"/><path class="g5" d="M597 1259 704 1268 726 1360Z"/><path class="g1" d="M597 1259 726 1360 601 1397Z"/><path class="g3" d="M704 1268 917 1208 726 1360Z"/><path class="g0" d="M917 1208 839 1349 726 1360Z"/><path class="g0" d="M917 1208 1000 1216 1000 1333Z"/><path class="g2" d="M917 1208 1000 1333 839 1349Z"/><path class="g4" d="M0 1324 155 1358 110 1467Z"/><path class="g2" d="M0 1324 110 1467 0 1500Z"/><path class="g5" d="M155 1358 251 1334 110 1467Z"/><path class="g5" d="M251 1334 259 1498 110 1467Z"/><path class="g5" d="M251 1334 359 1391 425 1480Z"/><path class="g4" d="M251 1334 425 1480 259 1498Z"/><path class="g0" d="M359 1391 540 1306 425 1480Z"/><path class="g2" d="M540 1306 498 1463 425 1480Z"/><path class="g0" d="M540 1306 601 1397 588 1479Z"/><path class="g1" d="M540 1306 588 1479 498 1463Z"/><path class="g2" d="M601 1397 726 1360 588 1479Z"/><path class="g1" d="M726 1360 744 1526 588 1479Z"/><path class="g2" d="M726 1360 839 1349 860 1515Z"/><path class="g4" d="M726 1360 860 1515 744 1526Z"/><path class="g5" d="M839 1349 1000 1333 860 1515Z"/><path class="g0" d="M1000 1333 1000 1493 860 1515Z"/><path class="g1" d="M0 1500 110 1467 0 1600Z"/><path class="g3" d="M110 1467 106 1600 0 1600Z"/><path class="g2" d="M110 1467 259 1498 218 1600Z"/><path class="g2" d="M110 1467 218 1600 106 1600Z"/><path class="g5" d="M259 1498 425 1480 218 1600Z"/><path class="g3" d="M425 1480 425 1600 218 1600Z"/><path class="g2" d="M425 1480 498 1463 481 1600Z"/><path class="g3" d="M425 1480 481 1600 425 1600Z"/><path class="g4" d="M498 1463 588 1479 481 1600Z"/><path class="g3" d="M588 1479 609 1600 481 1600Z"/><path class="g0" d="M588 1479 744 1526 792 1600Z"/><path class="g0" d="M588 1479 792 1600 609 1600Z"/><path class="g1" d="M744 1526 860 1515 792 1600Z"/><path class="g0" d="M860 1515 920 1600 792 1600Z"/><path class="g4" d="M860 1515 1000 1493 1000 1600Z"/><path class="g4" d="M860 1515 1000 1600 920 1600Z"/>
+  </svg>
+</div>
+
+<main class="card">
+
+  <div class="logo">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="pre">the West Coast Swing</div>
+    <h1 class="big">German<span class="l2">Open</span></h1>
+    <div class="year">2026</div>
+  </div>
+
+  <div class="wsdc" aria-label="WSDC Registry Event">
+    <span>Registry</span><b>WSDC</b><span>Event</span>
+  </div>
+
+  <div class="meta">August 5–9 · Freiburg</div><br>
+  <div class="slogan">5 Parties · 7h Workshops · 1600 m² Floor</div>
+
+  <nav class="links">
+    <a class="link" href="https://go-wcs.com/schedule" target="_blank" rel="noopener">
+      <span class="ico">📅</span><span class="txt">Schedule</span><span class="arr">▸</span>
+    </a>
+    <a class="link" href="https://scoring.dance/events/425/wall" target="_blank" rel="noopener">
+      <span class="ico">🏆</span><span class="txt">Competitions</span><span class="arr">▸</span>
+    </a>
+    <a class="link primary" href="https://scoring.dance/events/425/register" target="_blank" rel="noopener">
+      <span class="ico">✍️</span><span class="txt">Comp Registration</span><span class="arr">▸</span>
+    </a>
+    <a class="link" href="https://go-wcs.com/livestream" target="_blank" rel="noopener">
+      <span class="ico">📺</span><span class="txt">Livestream</span><span class="arr">▸</span>
+    </a>
+    <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Ballhaus+Freiburg+Leo-Wohleb-Str.+1+79098+Freiburg+im+Breisgau" target="_blank" rel="noopener">
+      <span class="ico">📍</span><span class="txt">Location</span><span class="arr">▸</span>
+    </a>
+    <a class="link" href="https://danceapp.net/de-de/events/128/register?currency=EUR" target="_blank" rel="noopener">
+      <span class="ico">🎟️</span><span class="txt">Tickets &amp; Passes</span><span class="arr">▸</span>
+    </a>
+  </nav>
+
+  <div class="socials">
+    <a href="https://go-wcs.com" target="_blank" rel="noopener" aria-label="Website">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A7.9 7.9 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.6 16.6 0 0 0 0 4H4.26zm.81 2h2.95c.33 1.26.8 2.46 1.38 3.56A7.99 7.99 0 0 1 5.07 16zm2.95-8H5.07a7.99 7.99 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.02 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.9 14.9 0 0 1 0-4h4.68a14.9 14.9 0 0 1 0 4zm.26 5.56c.58-1.1 1.05-2.3 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.6 16.6 0 0 0 0-4h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/german_open_wcs/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+    </a>
+  </div>
+
+  <section class="lineup">
+    <h3>★ Your Trainers ★</h3>
+    <p>
+      Thibault &amp; Nicole Ramirez<br>
+      Jakub Jakubek &amp; Emeline Rochefeuille<br>
+      John Lindo &amp; Mejrem Halidovic<br>
+      Maxime &amp; Torri Zzaoui<br>
+      Igor Pitangui &amp; Fernanda Dubiel<br>
+      Paul Warden &amp; Jula Palenga<br>
+      Philipp &amp; Ekaterina Wolff
+    </p>
+    <p class="dj">Head DJ Justin Petersen · MC Wayne Powell</p>
+  </section>
+
+  <footer>
+    Ballhaus Freiburg · Germany &nbsp;·&nbsp; <a href="https://go-wcs.com" target="_blank" rel="noopener">go-wcs.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
