@@ -2,7 +2,7 @@
 
 > Self-hosted, single-page "link in bio" landing pages for West Coast Swing dance events — each one hand-themed to match the event's own branding.
 
-Every page is a single, self-contained HTML file (inline CSS, no build step, no
+Every page is a single, self-contained HTML file (inline CSS/JS, no build step, no
 tracking, no dependencies) served for free via **GitHub Pages**. Think of it as a
 lightweight, fully customizable alternative to Linktree.
 
@@ -12,23 +12,24 @@ lightweight, fully customizable alternative to Linktree.
 
 | Page | Event | When / Where | Link |
 |------|-------|--------------|------|
+| 🎚️ `swingtime.html` | **SwingTime Denver 2026** | Sep 10–14 · Denver, USA | [Open](https://andreaskasper.github.io/linktrees/html/swingtime.html) |
 | 🇩🇪 `german-open.html` | **The WCS German Open 2026** | Aug 5–9 · Freiburg, Germany | [Open](https://andreaskasper.github.io/linktrees/html/german-open.html) |
 | 🟡 `d-townswing.html` | **D-Town Swing 2026** | Jun 18–21 · Düsseldorf, Germany | [Open](https://andreaskasper.github.io/linktrees/html/d-townswing.html) |
 | 🌊 `baltic.html` | **Baltic Swing 2026** | Jun 11–15 · Gdańsk, Poland | [Open](https://andreaskasper.github.io/linktrees/html/baltic.html) |
 | 🌾 `rockthebarn.html` | **Rock the Barn** | — | [Open](https://andreaskasper.github.io/linktrees/html/rockthebarn.html) |
 
 Each page bundles the essentials attendees look for: schedule, competitions
-(via [scoring.dance](https://scoring.dance)), location, livestream, socials and
-featured artists.
+(via [scoring.dance](https://scoring.dance) or the event's own system), location,
+livestream, tickets, socials and featured artists.
 
 ---
 
 ## 🎨 What makes them nice
 
-- **One file, zero dependencies** — pure HTML + inline CSS, works offline and loads instantly.
-- **Bespoke themes** — every event gets its own palette, typography and mood (grunge-yellow license plate, seaside sunshine, barnyard, low-poly flag mosaic, …).
+- **One file, zero dependencies** — pure HTML + inline CSS (and, where it earns its place, a few lines of inline JS), works offline and loads instantly.
+- **Bespoke themes** — every event gets its own palette, typography and mood (grunge-yellow license plate, seaside sunshine, barnyard, low-poly flag mosaic, touch-reactive neon spectrum, …).
 - **Mobile-first** — designed for the phone screens people actually scan QR codes with.
-- **Tasteful motion** — subtle animations that respect `prefers-reduced-motion`.
+- **Tasteful motion** — subtle animations that respect `prefers-reduced-motion`; pages that use JS degrade to a CSS-only version without it.
 - **Accessible** — semantic markup and ARIA labels on icons and logos.
 
 ---
@@ -60,7 +61,8 @@ linktrees/
 │   ├── baltic.html        # Baltic Swing 2026
 │   ├── d-townswing.html   # D-Town Swing 2026
 │   ├── german-open.html   # The WCS German Open 2026
-│   └── rockthebarn.html   # Rock the Barn
+│   ├── rockthebarn.html   # Rock the Barn
+│   └── swingtime.html     # SwingTime Denver 2026
 └── README.md
 ```
 
